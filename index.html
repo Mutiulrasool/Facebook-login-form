@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main-div {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .scnd-m-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .fb-div {
+            padding: 10px;
+            margin-right: 25px;
+        }
+
+        h1 {
+            color: rgb(38, 92, 209);
+        }
+
+        .log-in {
+            max-width: 300px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        form {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        input {
+            margin: 5px 0px;
+            width: 80%;
+            padding: 10px;
+        }
+
+        button {
+            width: 85%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .login-b {
+            background-color: rgb(38, 92, 209);
+            color: white;
+            font-weight: bold;
+        }
+
+        .account-b {
+            background-color: rgb(76, 183, 62);
+            color: white;
+            font-weight: bold;
+        }
+
+        #forget-p {
+            color: rgb(38, 92, 209);
+            font-weight: 5px;
+        }
+
+        @media only screen and (max-width: 300px) {
+            .scnd-m-div {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="main-div">
+        <div class="scnd-m-div">
+            <div class="fb-div">
+                <h1>facebook</h1>
+                <p>Connect with friends and the world <br> around you on facebook. </p>
+            </div>
+            <div class="log-in">
+                <form action="get">
+                    <input type="email" placeholder="Enter your email or phone">
+                    <input type="password" placeholder="password">
+                    <button class="login-b">
+                        <h2>Log in</h2>
+                    </button>
+                    <p id="forget-p">forget pasword?</p>
+                    <hr>
+                    <button class="account-b">
+                        <h2>Create account</h2>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
